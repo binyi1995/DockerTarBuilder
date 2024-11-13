@@ -36,7 +36,7 @@ jobs:
           docker pull "${image}" --platform "linux/amd64"
           
           # 给拉取的镜像打上阿里云仓库的标签
-          ali_image="crpi-mrf463e7rbcuftvk.cn-hangzhou.personal.cr.aliyuncs.com/by_repo/$(basename ${image})"  # 替换为你自己的阿里云仓库和镜像名称
+          ali_image="crpi-mrf463e7rbcuftvk.cn-hangzhou.personal.cr.aliyuncs.com/by_repo/${image}"  # 替换为你自己的阿里云仓库和镜像名称
           docker tag "${image}" "${ali_image}"
           
           # 将镜像推送到阿里云容器镜像服务
