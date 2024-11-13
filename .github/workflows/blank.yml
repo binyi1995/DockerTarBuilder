@@ -25,6 +25,7 @@ jobs:
       with:
         username: c07082008  # 阿里云用户名或Access Key ID
         password: Binyi123!
+        registry: crpi-mrf463e7rbcuftvk.cn-hangzhou.personal.cr.aliyuncs.com 
 
     - name: Pull Docker Images and Push to Aliyun Registry
       run: |
